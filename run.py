@@ -18,7 +18,7 @@ def main():
         list_possibilities[i] = [x.strip() for x in comps.split('|') if x.strip()]
 
     sentence = input("Phrase à tester : ")
-    print("Note : les signes de ponctuation (ex. ., !, ?) ne doivent pas être précédés d’un espace.")
+    print("Note : les signes de ponctuation ne doivent pas être précédés d’un espace, sauf (SIGNS_WITH_SPACE_BEFORE = {'!', '?', ':', ';', '»','«', '(', '[', '{', '«', '»'}) qui peuvent être précédés d’un espace.")
 
     case_sensitive_input = input("Respecter la casse ? (y/n) : ").strip().lower()
     case_sensitive = case_sensitive_input == 'y'
