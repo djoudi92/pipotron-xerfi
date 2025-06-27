@@ -52,7 +52,7 @@ if not uploaded_file:
 
 sentence = st.text_input("Phrase à vérifier")
 
-st.caption(" Astuce : les signes de ponctuation ne doivent pas être précédés d’espace sauf (! ?).")
+st.caption(" Astuce : les signes de ponctuation ne doivent pas être précédés d’espace sauf ('!', '?', ':', ';', '»','«', '(', '[', '{', '«', '»')")
 st.caption(" Ce projet ne vérifie pas la validité grammaticale des phrases, uniquement leur conformité à une structure donnée (pipotron).")
 
 case_sensitive = st.checkbox("Respecter la casse (case sensitive)", value=True)
